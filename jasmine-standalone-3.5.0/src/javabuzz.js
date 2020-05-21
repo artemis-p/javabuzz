@@ -1,5 +1,13 @@
 class Javabuzz {
-  isDivisibleByThree(number) {
-    return (number % 3 === 0);
+  _isDivisibleBy(divisor, number) {
+    return (number % divisor === 0);
+  }
+
+  play(number) {
+    if (this._isDivisibleBy(3, number)) {
+      return 'Fizz';
+    } else {
+      return number;
+    }
   }
 }

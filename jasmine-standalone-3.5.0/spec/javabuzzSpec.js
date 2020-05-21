@@ -24,4 +24,14 @@ describe('Javabuzz', function() {
      expect(javabuzz.play(10)).toEqual('Buzz');
      });
    });
+
+   describe('multiples of 3 and 5', function() {
+    it('buzzes for 15', function() {
+       expect(javabuzz.play(15)).toEqual('FizzBuzz');
+    });
+ 
+    it('fizzes for 30', function() {
+     expect(javabuzz.play(30)).toEqual('FizzBuzz');
+     });
+   });
 });

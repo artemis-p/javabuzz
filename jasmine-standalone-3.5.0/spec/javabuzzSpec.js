@@ -14,4 +14,14 @@ describe('Javabuzz', function() {
     expect(javabuzz.play(6)).toEqual('Fizz');
     });
   });
+
+  describe('multiples of 5', function() {
+    it('buzzes for 5', function() {
+       expect(javabuzz.play(5)).toEqual('Buzz');
+    });
+ 
+    it('fizzes for 10', function() {
+     expect(javabuzz.play(10)).toEqual('Buzz');
+     });
+   });
 });

@@ -34,4 +34,14 @@ describe('Javabuzz', function() {
      expect(javabuzz.play(30)).toEqual('FizzBuzz');
      });
    });
+
+   describe('all other numbers', function() {
+    it('returns 1 for 1', function() {
+       expect(javabuzz.play(1)).toEqual(1);
+    });
+ 
+    it('returns 11 for 11', function() {
+     expect(javabuzz.play(11)).toEqual(11);
+     });
+   });
 });

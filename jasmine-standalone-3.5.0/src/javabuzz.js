@@ -15,3 +15,8 @@ class Javabuzz {
     }
   }
 }
+var javabuzz = new Javabuzz;
+
+for (var i = 1; i <= 100; i++) {
+  console.log(javabuzz.play(i));
+}

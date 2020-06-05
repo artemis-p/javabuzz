@@ -1,13 +1,13 @@
-class Javabuzz {
+class JavaBuzz {
   _isDivisibleBy(divisor, number) {
     return (number % divisor === 0);
   }
 
   play(number) {
     if (this._isDivisibleBy(15, number)) {
-      return 'FizzBuzz';
+      return 'JavaBuzz';
     } else if (this._isDivisibleBy(3, number)) {
-      return 'Fizz';
+      return 'Java';
     } else if (this._isDivisibleBy(5, number)) {
       return 'Buzz';
     } else {
@@ -15,8 +15,8 @@ class Javabuzz {
     }
   }
 }
-var javabuzz = new Javabuzz;
+var javaBuzz = new JavaBuzz;
 
 for (var i = 1; i <= 100; i++) {
-  console.log(javabuzz.play(i));
+  console.log(javaBuzz.play(i));
 }
